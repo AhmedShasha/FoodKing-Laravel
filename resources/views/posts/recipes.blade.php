@@ -26,7 +26,7 @@
                                     </div>
 
                                     <hr>
-                                    <a href="{{ '/details/' . $recipe->id }}" class="btn btn-primary">Show more</a>
+                                    <a href="{{ 'details/' . $recipe->id }}" class="btn btn-primary">Show more</a>
                                 </div>
                             </div>
                         </div>

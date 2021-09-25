@@ -34,7 +34,7 @@
                         <div id="myDropdown" class="dropdown-content">
                             <a href="{{ route('home') }}">Home</a>
                             @foreach ($kitchens as $kitchen)
-                                <a href="{{ '/recipes/' . $kitchen->id }}">{{ $kitchen->name }}</a>
+                                <a href="{{ 'recipes/' . $kitchen->id }}">{{ $kitchen->name }}</a>
                             @endforeach
                         </div>
 
@@ -98,7 +98,7 @@
                                 <img src="{{ asset('img/kitchens/' . $kitchen->img) }}" class="img">
                                 <div class="over">
                                     <h3 class="capital">{{ $kitchen->name }} kitchen</h3>
-                                    <a href="{{ '/recipes/' . $kitchen->id }}">
+                                    <a href="{{ 'recipes/' . $kitchen->id }}">
                                         <button class="btn btn-primary capital">
                                             show More
                                         </button>
@@ -119,7 +119,7 @@
                     <h1 class="capital special-heading">popular meals</h1>
 
                     <div class="row">
-                      
+
                         <div class="col-sm-6 col-lg-3">
                             <div class="item">
                                 <img src="Images/’Mlo5ya.jpg" class="img">
@@ -215,7 +215,7 @@
                 </span>
                 <br>
                 <br>
-                <span class=" design logoFont ">DESIGNED BY team</span>
+                <span class=" design logoFont ">DESIGNED BY Shasha</span>
             </div>
             <div class=" icons txtCenter ">
                 <i class=" fa fa-facebook fa-lg "></i>
@@ -228,22 +228,7 @@
 
 
     <!-- JS files -->
-    <!-- scroll navbar
-<script>
-    window.onscroll=function(){
 
-            if(window.scrollY>450)
-            {
-                document.getElementById(" navbar ").className=" fixednav ";
-
-            }
-
-            else
-            {
-                document.getElementById(" navbar ").className=" ";
-            }
-          }
-</script> -->
     <script src=" {{ asset('js/jquery-3.5.1.js') }}"></script>
     <script src="{{ asset('js/jquery.nicescroll.min.js') }} "></script>
     <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js ">

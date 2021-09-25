@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','PostsController@home' )->name("home");
 Route::get('/recipes/{id}','PostsController@recipes')->name("recipes");
-Route::get('/details/{id}','PostsController@details' )->name("datails");
+Route::get('/recipes/details/{id}','PostsController@details' )->name("datails");
 
 
